@@ -46,5 +46,4 @@ USER airflow
 # Install the necessary dependencies
 RUN pip install \
     --no-cache-dir \
-    --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.9.1/constraints-3.11.txt" \
     "apache-airflow==2.9.1" -r /var/airflow/requirements.txt
