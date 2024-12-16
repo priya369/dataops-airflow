@@ -30,7 +30,7 @@ RUN chmod +x /usr/local/bin/kubectl
 
 WORKDIR /var/airflow
 
-COPY requirements.txt /var/airflow/requirements.txt
+COPY requirement.txt /var/airflow/requirements.txt
 
 # Create plugins and dags directory
 RUN mkdir -p /var/airflow/plugins
