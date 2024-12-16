@@ -23,7 +23,7 @@ RUN DOWNLOAD_URL="https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/goo
   && rm -rf "${GCLOUD_HOME}/.install/.backup/" \
   && gcloud --version
 
-## kubectl 
+## kubectl installation
 ENV KUBECTL_VERSION "v1.25.2"
 RUN curl -L -o /usr/local/bin/kubectl "https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl"
 RUN chmod +x /usr/local/bin/kubectl
